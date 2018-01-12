@@ -95,6 +95,7 @@ void FORTE_logic::enterStateDeInit(void){
 void FORTE_logic::enterStateunenable(void){
   m_nECCState = scm_nStateunenable;
   alg_resetQO1();
+  sendOutputEvent( scm_nEventCNFID);
   sendOutputEvent( scm_nEventNEXTID);
 }
 
